@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const CloseAnswer = document.querySelector('#close-answer');
     const Answer = document.querySelector('#answer');
     const Form = document.querySelector('form');
-    const Temperature = document.querySelector('#Temperature');
-    const Location = document.querySelector('#Location');
     const CityInput = document.querySelector('#name');
 
     // Function to toggle spinner visibility
@@ -41,14 +39,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Function to get weather information
-    async function getWeather(city) {
+    async function movie_search(movie_name) {
         spinner(true);
-        const response = await fetch(`/get_weather?city=${city}`);
+        const response = await fetch(`/get_movie?movie=${movie_name}`);
         const data = await response.json();
         console.log(data);
         Answer.style.display = 'block';
-        Location.textContent = `Location: ${data.City}`;
-        Temperature.textContent = `Temperature: ${data.Temp}°C`;
         spinner(false);
+        let counter = 0
+        let list = ""
+        for (let key in data) {
+            if (key !== "Error") {
+                counter += 1
+                
+
+            }
+
+
+        }
     }
 });

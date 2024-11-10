@@ -1,5 +1,5 @@
 from flask import Flask, make_response, jsonify, request, render_template
-from weather import get_weather as gw
+from movie_db import movie_search
 import time
 
 app = Flask(__name__)
@@ -16,14 +16,11 @@ def main():
 def static_files(filename):
     return app.send_static_file(filename)
 
-@app.route('/get_weather', methods=['GET'])
+@app.route('/movie_search', methods=['GET'])
 def get_weather():
     time.sleep(1)
-    city = request.args.get('city')
-    weather = gw(city)
-    return jsonify({'City': city, 'Temp': weather})
+    keyword = request.args.get('movie_name')
+    result = movie_search('keyword')
+    return result
 
 app.run(debug=True, host="0.0.0.0", port="8080")
-
-    
-    
