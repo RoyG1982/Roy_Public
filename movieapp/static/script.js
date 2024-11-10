@@ -51,11 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let key in data) {
             if (key !== "Error") {
                 counter += 1
-                
+                list += <list class 
 
             }
-
-
         }
     }
 });
