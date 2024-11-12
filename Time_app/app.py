@@ -1,3 +1,5 @@
+# This code creates a simple page which shows the time upon clicking
+
 from flask import Flask, make_response, jsonify, request, render_template
 
 app = Flask(__name__)
