@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        /* Flexbox container for the two forms */
+        .form-container {
+            display: flex;
+            justify-content: center; /* Center the forms horizontally */
+            gap: 20px; /* Add space between the forms */
+        }
+
+        form {
+            width: 20%; /* Adjust the form width as needed */
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column; /* Align children vertically */
+            align-items: center; /* Center align items within the form */
+        }
+
+        label {
+            display: block;
+            text-align: center; /* Center the text inside the label */
+            margin-bottom: 8px;
+            width: 100%; /* Ensure label takes up full width to align its contents */
+        }
+
+        input {
+            width: 70%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Domain Monitoring System</h1> </br>
+
+    <div class="form-container">
+
+    <form id="login_form">
+        <h3>Login</h3>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <form id="registration_form">
+        <h3>Not registered? register here:</h3>
+        <label for="choose_username">Choose a username:</label>
+        <input type="text" id="choose_username" name="choose_username" required><br><br>
+        <label for="choose_password">Choose a password:</label>
+        <input type="password" id="choose_password" name="choose_password" required><br><br>
+        <button type="submit">Register</button>
+    </form>
+
+    </div>
+
+    <div id="status"></div>
+
+    <!-- Link to the external JavaScript file (located in static/) -->
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
