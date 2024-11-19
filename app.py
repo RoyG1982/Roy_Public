@@ -1,7 +1,10 @@
 import json
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, session, redirect, url_for
 
 app = Flask(__name__)
+
+# Secret key for session management
+app.secret_key = 'your_secret_key_here'  # Use a secure random key in production
 
 # Path to the JSON file where user data will be stored
 users_file_path = 'users.json'
@@ -25,7 +28,10 @@ def save_users(users):
 # Route to serve the registration page (HTML form)
 @app.route('/')
 def index():
-    return render_template('index.html')
+    # Check if the user is logged in by checking the session
+    if 'username' in session:
+        return f"Welcome, {session['username']}! <br><a href='/logout'>Logout</a>"
+    return render_template('index.html')  # If not logged in, show the login/register form
 
 # Route to handle user registration
 @app.route('/register', methods=['POST'])
@@ -72,7 +78,17 @@ def login():
     if users[username] != password:
         return jsonify({'error': 'Incorrect password'}), 403
 
+    # Set the session variable for the logged-in user
+    session['username'] = username
+
     return jsonify({'message': 'Login successful!'})
+
+# Route to handle user logout
+@app.route('/logout')
+def logout():
+    # Remove the username from the session
+    session.pop('username', None)
+    return redirect(url_for('index'))  # Redirect to the homepage
 
 if __name__ == '__main__':
     app.run(debug=True)

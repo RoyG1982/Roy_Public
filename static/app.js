@@ -59,6 +59,8 @@ loginForm.addEventListener('submit', function(event) {
         if (data.message) {
             statusDiv.textContent = data.message;
             statusDiv.style.color = 'green';
+            // Redirect or update the UI on successful login
+            window.location.href = '/';  // Refresh page to show login status
         } else if (data.error) {
             statusDiv.textContent = data.error;
             statusDiv.style.color = 'red';
