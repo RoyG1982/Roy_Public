@@ -1,1 +1,1 @@
-script
+sudo apt update
