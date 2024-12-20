@@ -1,1 +1,2 @@
-ssh ubuntu@35.85.35.156 -i Roy_key.pem
+#!/bin/bash
+ssh -i Roy_key.pem ubuntu@35.85.35.156
