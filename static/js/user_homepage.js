@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const upload_button = document.getElementById("upload_button");
     const fileInput = document.getElementById("add_txt_file");
 
-    if (check_button) check_button.addEventListener("click", check_domain);
-    if (add_button) add_button.addEventListener("click", add_domain);
-    if (upload_button) upload_button.addEventListener("click", () => fileInput.click());
-    if (fileInput) fileInput.addEventListener("change", handle_file_upload);
+    check_button.addEventListener("click", check_domain);
+    add_button.addEventListener("click", add_domain);
+    upload_button.addEventListener("click", () => fileInput.click());
+    fileInput.addEventListener("change", handle_file_upload);
 
     fetchAndDisplayDomains();
 });
