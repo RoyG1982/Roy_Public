@@ -11,12 +11,9 @@ ssh ubuntu@current public ip -i RoyG_key.pem
 ssh ubuntu@35.91.21.139 -i RoyG_key.pem
 
 
-3. Access root:
-sudo -i
-
 3. Perform updates and installations:
 
-apt update
+sudo apt update
 
 apt install python3-pip
 
@@ -30,4 +27,4 @@ cd Domain_monitoring7
 python3 app.py
 
 
-5. Open in browser: http://35.85.35.156:8080/
+5. Open in browser: http://35.91.21.139:5000/
