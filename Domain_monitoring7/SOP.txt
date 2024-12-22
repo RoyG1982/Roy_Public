@@ -1,20 +1,26 @@
 1. Copy files to AWS instance:
 
-scp -i "C:\Users\User\Desktop\DevOps\Roy_key.pem" -r "C:\Users\User\Desktop\DevOps\Domain_monitoring7_AWS" ubuntu@35.85.35.156:/home/ubuntu/
+scp -i "C:\Users\User\Desktop\DevOps\RoyG_key.pem" -r "C:\Users\User\Desktop\DevOps\Domain_monitoring7" ubuntu@35.91.21.139:/home/ubuntu/
 
 
 2. Access AWS instance:
 
-ssh ubuntu@current public ip -i Roy_key.pem
+ssh ubuntu@current public ip -i RoyG_key.pem
 
+(current:
+ssh ubuntu@35.91.21.139 -i RoyG_key.pem
+
+
+3. Access root:
+sudo -i
 
 3. Perform updates and installations:
 
-sudo apt update
+apt update
 
-sudo apt install python3-pip
+apt install python3-pip
 
-sudo apt install python3-flask
+apt install python3-flask
 
 
 4. Run the app:

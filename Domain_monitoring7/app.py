@@ -235,4 +235,4 @@ def get_domains():
     return jsonify({"status": "success", "domains": domains_with_liveness_and_cert_info})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8080, debug=True)
