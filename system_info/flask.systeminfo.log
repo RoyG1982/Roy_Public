@@ -1,0 +1,15 @@
+[2024-12-22 17:41:56,308 - _internal.py:224, Function: _log] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8081
+ * Running on http://192.168.1.165:8081
+[2024-12-22 17:41:56,309 - _internal.py:224, Function: _log] INFO - [33mPress CTRL+C to quit[0m
+[2024-12-22 17:41:58,668 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [22/Dec/2024 17:41:58] "GET / HTTP/1.1" 200 -
+[2024-12-22 17:41:58,751 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [22/Dec/2024 17:41:58] "GET /script.js HTTP/1.1" 200 -
+[2024-12-22 17:41:58,757 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [22/Dec/2024 17:41:58] "GET /style.css HTTP/1.1" 200 -
+[2024-12-22 17:41:58,788 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [22/Dec/2024 17:41:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-12-22 17:42:02,780 - app.py:39, Function: systeminfo] INFO - System info for os_info retrieved successfully.
+[2024-12-22 17:42:02,780 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [22/Dec/2024 17:42:02] "GET /systeminfo?metric=os_info HTTP/1.1" 200 -
+[2024-12-22 17:42:04,507 - app.py:39, Function: systeminfo] INFO - System info for cpu retrieved successfully.
+[2024-12-22 17:42:04,507 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [22/Dec/2024 17:42:04] "GET /systeminfo?metric=cpu HTTP/1.1" 200 -
+[2024-12-22 17:42:05,939 - app.py:39, Function: systeminfo] INFO - System info for mem retrieved successfully.
+[2024-12-22 17:42:05,939 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [22/Dec/2024 17:42:05] "GET /systeminfo?metric=mem HTTP/1.1" 200 -

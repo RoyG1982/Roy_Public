@@ -1,95 +1,68 @@
-import platform
-import socket
-import os
-import psutil
-from flask import Flask, jsonify, render_template
+import logging
+import sys
+from flask import Flask, request, jsonify, render_template
+from systeminfo import SystemInfo
 
-class SystemInfo:
-    def __init__(self):
-        self.result = {
-            "os_info": {},
-            "cpu": {},
-            "mem": {}
-        }
-
-    def get_os_info(self):
-        """Collect operating system information."""
-        try:
-            self.result['os_info'] = {
-                "Operating System": platform.system(),
-                "Hostname": socket.gethostname(),
-                "User": os.getlogin()
-            }
-        except Exception as e:
-            self.result['os_info'] = {"Error": f"Could not retrieve OS info: {str(e)}"}
-
-    def get_cpu_info(self):
-        """Collect CPU usage information."""
-        try:
-            self.result['cpu'] = {
-                "Count": psutil.cpu_count(logical=True),
-                "Usage": f"{psutil.cpu_percent(interval=1)}%"
-            }
-        except Exception as e:
-            self.result['cpu'] = {"Error": f"Could not retrieve CPU info: {str(e)}"}
-
-    def get_memory_info(self):
-        """Collect memory usage information."""
-        try:
-            mem = psutil.virtual_memory()
-            self.result['mem'] = {
-                "Total Memory (GB)": round(mem.total / (1024 ** 3), 2),
-                "Used Memory (GB)": round(mem.used / (1024 ** 3), 2),
-                "Free Memory (GB)": round(mem.free / (1024 ** 3), 2)
-            }
-        except Exception as e:
-            self.result['mem'] = {"Error": f"Could not retrieve memory info: {str(e)}"}
-
-    def collect_info(self):
-        """Gather all system information."""
-        self.get_os_info()
-        self.get_cpu_info()
-        self.get_memory_info()
-
-    def display_result(self, metrics, format="text"):
-        """Return collected information in the specified format."""
-        response = {}
-        
-        if 'all' in metrics:
-            response = self.result
-        else:
-            for metric in metrics:
-                response[metric] = self.result.get(metric, {})
-
-        if format == "json":
-            return response  # Return data as JSON-compatible dictionary
-        else:
-            # Convert dictionary to a formatted text response
-            text_output = ""
-            for key, value in response.items():
-                text_output += f'{key}:\n'
-                for subkey, subvalue in value.items():
-                    text_output += f"  {subkey}: {subvalue}\n"
-            return text_output.strip()  # Return formatted text
-
-# Create Flask app
+# Initialize Flask app
 app = Flask(__name__)
 
-# Create a SystemInfo instance
-sys_info = SystemInfo()
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='[%(asctime)s - %(filename)s:%(lineno)d, Function: %(funcName)s] %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("flask.systeminfo.log"),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+logger = logging.getLogger(__name__)
+
+# Initialize SystemInfo instance
+system_info = SystemInfo()
+
+@app.route('/systeminfo', methods=['GET'])
+def systeminfo():
+    """
+    Route to fetch system information in text format based on 'metric' query parameter.
+    Expected values for 'metric': os_info, cpu, mem, proc, all.
+    """
+    metric = request.args.get('metric', default=None)
+    
+    if metric not in ['os_info', 'cpu', 'mem', 'all']:
+        logger.error("Invalid metric requested")
+        return "Invalid metric. Expected one of: os_info, cpu, mem, all", 400
+
+    # Collect system info
+    system_info.collect_info()
+    output = system_info.display_result([metric], format="text")
+
+    logger.info(f"System info for {metric} retrieved successfully.")
+    return output
+
+@app.route('/systeminfo/json', methods=['GET'])
+def systeminfo_json():
+    """
+    Route to fetch all system information in JSON format.
+    """
+    # Collect system info
+    system_info.collect_info()
+    output = system_info.display_result(['all'], format="json")
+
+    logger.info("System info (JSON format) retrieved successfully.")
+    return jsonify(output)
+
+@app.route('/<filename>')
+def static_file(filename):
+    return app.send_static_file(filename)
 
 @app.route('/')
 def index():
-    """Home route, displays system info."""
-    sys_info.collect_info()  # Collect the system information
-    return render_template('index.html', result=sys_info.result)
+    return render_template('index.html')
 
-@app.route('/json')
-def json_info():
-    """API endpoint to get system info in JSON format."""
-    sys_info.collect_info()  # Collect the system information
-    return jsonify(sys_info.result)
+@app.route('/health')
+def health():
+    return {}, 200
 
+# Run the Flask app
 if __name__ == '__main__':
-    # Run the app
-    app.run(debug=True)
+    app.run(port=8081, host='0.0.0.0')
