@@ -1,6 +1,10 @@
 1. Copy files to AWS instance:
 
-scp -i "C:\Users\User\Desktop\DevOps\RoyG_key.pem" -r "C:\Users\User\Desktop\DevOps\Domain_monitoring7" ubuntu@35.91.21.139:/home/ubuntu/
+scp -i "C:\Users\User\Desktop\AWS_key\RoyG_key.pem" -r "C:\Users\User\Desktop\DevOps\Domain_monitoring7" ubuntu@35.91.21.139:/home/ubuntu/
+
+or Linux:
+
+scp -i "/c/Users/User/Desktop/DevOps/RoyG_key.pem" -r "/c/Users/User/Desktop/DevOps/Domain_monitoring7" ubuntu@35.91.21.139:/home/ubuntu/
 
 
 2. Access AWS instance:
