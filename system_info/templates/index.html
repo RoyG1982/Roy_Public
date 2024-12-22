@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Information</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 40px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Info Box */
+        .info-box {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .info-box h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .info-box pre {
+            background-color: #e0f7fa;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1em;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin: 0;
+        }
+        .info-box strong {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        /* Link Styles */
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            .info-box h2 {
+                font-size: 1.3em;
+            }
+            .info-box pre {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>System Information</h1>
+
+    <div class="container">
+        <!-- Operating System Info -->
+        <div class="info-box">
+            <h2>Operating System Information</h2>
+            <div>
+                <strong>Operating System:</strong> {{ result['os_info']['Operating System'] }}<br>
+                <strong>Hostname:</strong> {{ result['os_info']['Hostname'] }}<br>
+                <strong>User:</strong> {{ result['os_info']['User'] }}
+            </div>
+        </div>
+
+        <!-- CPU Info -->
+        <div class="info-box">
+            <h2>CPU Information</h2>
+            <div>
+                <strong>CPU Count:</strong> {{ result['cpu']['Count'] }}<br>
+                <strong>CPU Usage:</strong> {{ result['cpu']['Usage'] }}
+            </div>
+        </div>
+
+        <!-- Memory Info -->
+        <div class="info-box">
+            <h2>Memory Information</h2>
+            <div>
+                <strong>Total Memory (GB):</strong> {{ result['mem']['Total Memory (GB)'] }} GB<br>
+                <strong>Used Memory (GB):</strong> {{ result['mem']['Used Memory (GB)'] }} GB<br>
+                <strong>Free Memory (GB):</strong> {{ result['mem']['Free Memory (GB)'] }} GB
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h2>View JSON Output</h2>
+            <a href="/json" target="_blank">Click here to see the JSON output</a>
+        </div>
+    </div>
+
+</body>
+</html>
