@@ -6,12 +6,12 @@ import time
 driver = webdriver.Chrome()
 driver.get ("http://127.0.0.1:8080/")
 
-search_box = driver.find_element(By.ID, "text_box")
+l_username = driver.find_element(By.ID, "l_username")
+l_password = driver.find_element(By.ID, "l_password")
+login_button = driver.find_element(By.ID, "login_button")
 
-search_box.send_keys("Yellowstone")
-time.sleep(3)
-search_box.send_keys(Keys.CONTROL + "a")  # Select all text (works on Windows/Linux)
-search_box.send_keys(Keys.BACKSPACE)  # Delete all selected text
-time.sleep(3)
+l_username.send_keys("roy")
+l_password.send_keys("123")
+login_button.click()
 
-driver.quit()
+time.sleep(60)
