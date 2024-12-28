@@ -13,3 +13,204 @@
 [2024-12-22 17:42:04,507 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [22/Dec/2024 17:42:04] "GET /systeminfo?metric=cpu HTTP/1.1" 200 -
 [2024-12-22 17:42:05,939 - app.py:39, Function: systeminfo] INFO - System info for mem retrieved successfully.
 [2024-12-22 17:42:05,939 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [22/Dec/2024 17:42:05] "GET /systeminfo?metric=mem HTTP/1.1" 200 -
+[2024-12-28 10:26:30,186 - _internal.py:224, Function: _log] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8081
+ * Running on http://192.168.1.165:8081
+[2024-12-28 10:26:30,188 - _internal.py:224, Function: _log] INFO - [33mPress CTRL+C to quit[0m
+[2024-12-28 10:26:46,948 - _internal.py:224, Function: _log] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.165:8080
+[2024-12-28 10:26:46,949 - _internal.py:224, Function: _log] INFO - [33mPress CTRL+C to quit[0m
+[2024-12-28 10:26:52,024 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:26:52] "GET / HTTP/1.1" 200 -
+[2024-12-28 10:26:52,104 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:26:52] "GET /style.css HTTP/1.1" 200 -
+[2024-12-28 10:26:52,115 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:26:52] "GET /script.js HTTP/1.1" 200 -
+[2024-12-28 10:26:52,135 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:26:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-12-28 10:26:55,679 - app.py:39, Function: systeminfo] INFO - System info for os_info retrieved successfully.
+[2024-12-28 10:26:55,680 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:26:55] "GET /systeminfo?metric=os_info HTTP/1.1" 200 -
+[2024-12-28 10:29:25,688 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:29:25] "GET / HTTP/1.1" 200 -
+[2024-12-28 10:29:25,709 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:29:25] "GET /style.css HTTP/1.1" 200 -
+[2024-12-28 10:29:25,956 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:29:25] "GET /script.js HTTP/1.1" 200 -
+[2024-12-28 10:29:26,272 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:29:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-12-28 10:30:09,358 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:30:09] "GET / HTTP/1.1" 200 -
+[2024-12-28 10:30:09,372 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:30:09] "[36mGET /style.css HTTP/1.1[0m" 304 -
+[2024-12-28 10:30:09,372 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:30:09] "[36mGET /script.js HTTP/1.1[0m" 304 -
+[2024-12-28 10:30:42,128 - _internal.py:224, Function: _log] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8089
+ * Running on http://192.168.1.165:8089
+[2024-12-28 10:30:42,128 - _internal.py:224, Function: _log] INFO - [33mPress CTRL+C to quit[0m
+[2024-12-28 10:30:54,599 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:30:54] "GET / HTTP/1.1" 200 -
+[2024-12-28 10:30:54,659 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:30:54] "GET /script.js HTTP/1.1" 200 -
+[2024-12-28 10:30:54,659 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:30:54] "GET /style.css HTTP/1.1" 200 -
+[2024-12-28 10:30:54,692 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:30:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:05,336 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:05] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:07,024 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:07] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:09,318 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:09] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:09,325 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:09] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:11,025 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:11] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:13,339 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:13] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:14,021 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:14] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:15,328 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:15] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:17,031 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:17] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:19,323 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:19] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:19,323 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:19] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:21,022 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:21] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:23,318 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:23] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:24,036 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:24] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:25,334 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:25] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:27,031 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:27] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:29,330 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:29] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:29,330 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:29] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:31,032 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:31] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:33,340 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:33] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:34,026 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:34] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:35,330 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:35] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:37,027 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:37] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:39,329 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:39] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:39,329 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:39] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:41,027 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:41] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:43,327 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:43] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:44,021 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:44] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:45,328 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:45] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:47,021 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:47] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:49,324 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:49] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:49,326 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:49] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:51,017 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:51] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:53,344 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:53] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:54,029 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:54] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:55,900 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:55] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:57,590 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:57] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:59,904 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:59] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:32:59,906 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:32:59] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:01,590 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:01] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:03,906 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:03] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:04,605 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:04] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:05,917 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:05] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:07,602 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:07] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:09,901 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:09] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:09,904 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:09] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:11,590 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:11] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:13,901 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:13] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:14,596 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:14] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:15,903 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:15] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:17,592 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:17] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:19,908 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:19] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:19,908 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:19] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:21,598 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:21] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:23,901 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:23] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:24,601 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:24] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:25,902 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:25] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:27,593 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:27] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:29,323 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:29] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:29,328 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:29] "[33mGET /logs HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:31,025 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:31] "[33mGET /stats/requests HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:32,519 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:32] "GET / HTTP/1.1" 200 -
+[2024-12-28 10:33:32,605 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:32] "GET /style.css HTTP/1.1" 200 -
+[2024-12-28 10:33:32,773 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:32] "GET /script.js HTTP/1.1" 200 -
+[2024-12-28 10:33:32,843 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-12-28 10:33:52,261 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:33:52] "GET / HTTP/1.1" 200 -
+[2024-12-28 10:35:47,308 - _internal.py:224, Function: _log] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.165:8080
+[2024-12-28 10:35:47,308 - _internal.py:224, Function: _log] INFO - [33mPress CTRL+C to quit[0m
+[2024-12-28 10:35:57,859 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:35:57] "GET / HTTP/1.1" 200 -
+[2024-12-28 10:35:57,879 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:35:57] "[36mGET /style.css HTTP/1.1[0m" 304 -
+[2024-12-28 10:35:57,882 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:35:57] "[36mGET /script.js HTTP/1.1[0m" 304 -
+[2024-12-28 10:37:37,661 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:37:37] "GET / HTTP/1.1" 200 -
+[2024-12-28 10:37:37,685 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:37:37] "[36mGET /style.css HTTP/1.1[0m" 304 -
+[2024-12-28 10:37:37,928 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 10:37:37] "[36mGET /script.js HTTP/1.1[0m" 304 -
+[2024-12-28 14:07:46,716 - _internal.py:224, Function: _log] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.165:8080
+[2024-12-28 14:07:46,716 - _internal.py:224, Function: _log] INFO - [33mPress CTRL+C to quit[0m
+[2024-12-28 14:07:50,353 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:07:50] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:07:50,415 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:07:50] "[36mGET /style.css HTTP/1.1[0m" 304 -
+[2024-12-28 14:07:50,447 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:07:50] "[36mGET /script.js HTTP/1.1[0m" 304 -
+[2024-12-28 14:08:02,213 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:02] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:08,580 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:08] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:28,668 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:28] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:28,668 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:28] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:28,668 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:28] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:28,668 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:28] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:28,668 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:28] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:29,637 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:29] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:29,637 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:29] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:29,637 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:29] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:29,637 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:29] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:29,670 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:29] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:31,731 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:31] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:32,808 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:32] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:33,212 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:33] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:34,066 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:34] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:35,439 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:35] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:35,833 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:35] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:35,886 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:35] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:36,071 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:36] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:36,102 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:36] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:36,341 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:36] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:36,528 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:36] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:36,559 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:36] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:36,955 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:36] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:39,314 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:39] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:39,598 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:39] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:39,882 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:39] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:40,039 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:40] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:40,134 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:40] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:40,452 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:40] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:41,645 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:41] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:42,281 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:42] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:42,313 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:42] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:43,594 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:43] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:43,958 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:43] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:44,887 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:44] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:45,254 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:45] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:45,870 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:45] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:45,870 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:45] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:46,576 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:46] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:47,006 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:47] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:47,038 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:47] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:47,584 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:47] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:47,694 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:47] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:48,855 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:48] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:49,843 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:49] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:50,318 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:50] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:50,647 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:50] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:50,916 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:50] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:51,198 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:51] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:51,243 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:51] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:51,697 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:51] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:52,419 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:52] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:54,055 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:54] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:54,071 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:54] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:54,164 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:54] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:55,151 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:55] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:55,374 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:55] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:56,270 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:56] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:56,891 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:56] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:56,891 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:56] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:57,128 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:57] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:57,578 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:57] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:58,833 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:58] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:08:59,170 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:59] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:08:59,640 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:08:59] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:09:00,646 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:09:00] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:09:00,768 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:09:00] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:09:01,530 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:09:01] "GET /health HTTP/1.1" 200 -
+[2024-12-28 14:09:01,989 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:09:01] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:15:49,529 - _internal.py:224, Function: _log] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.165:8080
+[2024-12-28 14:15:49,529 - _internal.py:224, Function: _log] INFO - [33mPress CTRL+C to quit[0m
+[2024-12-28 14:15:53,191 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:15:53] "GET / HTTP/1.1" 200 -
+[2024-12-28 14:15:53,264 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:15:53] "[36mGET /script.js HTTP/1.1[0m" 304 -
+[2024-12-28 14:15:53,265 - _internal.py:224, Function: _log] INFO - 127.0.0.1 - - [28/Dec/2024 14:15:53] "[36mGET /style.css HTTP/1.1[0m" 304 -
+[2024-12-28 14:16:10,333 - _internal.py:224, Function: _log] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.165:8080
+[2024-12-28 14:16:10,333 - _internal.py:224, Function: _log] INFO - [33mPress CTRL+C to quit[0m

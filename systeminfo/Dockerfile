@@ -1,7 +1,7 @@
 FROM python
-RUN mkdir /systemifo
+RUN mkdir /systeminfo
 RUN chmod 777 /systeminfo
 COPY . /systeminfo
 WORKDIR /systeminfo
 RUN pip install -r requirements.txt
-CMD ("python", "app.")
+CMD ("python", "app.py")
