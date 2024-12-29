@@ -97,7 +97,11 @@ body {
 <body>
     <h1>Domain Liveness Checker</h1>
     <p id="logged_in">Logged in as: {{ username }}</p>
-    
+
+    <a href="{{ url_for('index') }}">
+        <button id = "back_to_home">Back to Home</button>
+    </a>
+
     <div class="container">
         <div class="domain-check-section">
             <input type="text" id="domain" placeholder="Enter domain (e.g., example.com)" required>
