@@ -1,0 +1,26 @@
+# swarm1: 18.236.144.193:172.31.27.207
+# swarm2: 54.212.12.186:172.31.19.12
+# swarm3: 35.85.153.166:172.31.22.236
+# storage: 34.219.9.38:172.31.16.193
+# agent: 54.202.207.150:172.31.22.69
+
+# External load balancer: Lesson-23-external-R-1928713263.us-west-2.elb.amazonaws.com:8080
+# Internal load balancer: internal-lesson23-internal-Roy-1631794678.us-west-2.elb.amazonaws.com
+
+curl -sO http://Lesson-23-external-R-1928713263.us-west-2.elb.amazonaws.com:8080/jnlpJars/agent.jar
+java -jar agent.jar -url http://Lesson-23-external-R-1928713263.us-west-2.elb.amazonaws.com:8080/ -secret ba8ea6ab1e27260226741c0303c5b5ad1f01e42d236ddbc400686c9b9d334c60 -name docker -webSocket -workDir "/var/jenkins_home"
+
+#!/bin/bash
+sudo -i
+sudo hostnamectl set-hostname storage
+sudo apt -y update
+sudo apt -y install docker.io
+cat<<EOF>>/etc/hosts
+172.31.27.207 swarm1
+172.31.19.12 swarm2
+172.31.22.236 swarm3
+172.31.16.193 storage
+172.31.22.69 agent
+EOF
+
+docker swarm join --token SWMTKN-1-50bl5dz4ukfq9tq5thx5ttz8rbiotnf8ph67dnimtux3eiu9ww-514dbprs4qjz4i6qglcl87jun swarm1:2377
