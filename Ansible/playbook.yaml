@@ -1,0 +1,50 @@
+- hosts: all
+  become: yes
+  tasks:
+    - name: Change hostname
+      hostname:
+        name: ansible1
+
+    # - name: Update all packages to the latest version
+    #   apt:
+    #     upgrade: dist
+
+    # - name: Update apt chache
+    #   apt:
+    #     update_cache: yes
+
+    # - name: Install Docker
+    #   apt: 
+    #     name: docker.io
+    #     state: present
+
+    # - name: Start Docker service
+    #   service: 
+    #     name: docker
+    #     state: started
+    #     enabled: yes
+
+    # - name: Remove running jenkins container
+    #   docker_container:
+    #     name: jenkins
+    #     state: absent
+
+    # - name: Create directory for jenkins
+    #   file:
+    #     name: /var/jenkins_home
+    #     state: directory
+
+    # - name: Set permissions
+    #   shell: |
+    #     chown -R 1000:1000 /var/jenking_home
+    #     chmod -R 777 /var/jenkins_home
+
+    # - name: run jenkins container
+    #   docker_container:
+    #     name: jenkins
+    #     image: jenkins/jenkins
+    #     state: started
+    #     ports:
+    #       - "8080:8080"
+    #     volumes:
+    #       - /var/jenkins_home:/var/jenkins_home
