@@ -1,0 +1,52 @@
+body {
+    background-color: #6050DC; /* Majorelle Blue */
+    display: flex;
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;      /* Centers content vertically */
+    height: 100vh;            /* Full viewport height */
+    margin: 0;                /* Remove default margin */
+    color: white;             /* Set text color for contrast */
+    font-family: Arial, sans-serif; /* Improve readability */
+    flex-direction: column;   /* Stack items vertically */
+}
+
+.content {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Slight white transparency */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    text-align: center;  /* Center the form content */
+    margin-top: 20px;     /* Add space between content and form */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency */
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    width: 250px; /* Control input width */
+    font-size: 16px;
+    border: 2px solid #6050DC; /* Match button border */
+    border-radius: 10px;
+}
+
+button {
+    width: 200px;  /* Set button width */
+    height: 60px;  /* Set button height */
+    font-size: 18px; /* Adjust text size */
+    background-color: white; /* Button background */
+    color: #6050DC; /* Text color */
+    border: 2px solid #6050DC; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #6050DC; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}

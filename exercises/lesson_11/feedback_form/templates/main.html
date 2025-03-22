@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>feedback</title>
+</head>
+<body>
+    <div class="content">
+        <h2>Feedback form</h2>
+    </div>
+
+    <form id="feedback_form">
+        <label for="username">Enter username</label>
+        <input type="text" name="username" id="username" required>
+        <br><br>
+        <label for="email">Enter email</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <label for="comment">Enter comment</label>
+        <input type="comment" name="comment" id="comment" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br><br>
+    <div class="content" id="display_results"></div>
+</body>
+</html>

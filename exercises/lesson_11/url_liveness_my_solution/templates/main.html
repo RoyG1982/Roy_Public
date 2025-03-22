@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>URL Liveness</title>
+</head>
+<body>
+    <div class="content">
+        <h2>Check URL Liveness</h2>
+    </div>
+
+    <form id="URL_form">
+        <label for="url">Enter URL:</label>
+        <input type="text" name="url" id="url" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br><br>
+    <div class="content" id="display_results"></div>
+</body>
+</html>

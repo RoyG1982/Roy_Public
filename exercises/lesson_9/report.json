@@ -1,0 +1,128 @@
+[
+    {
+        "url": "googletagmanager.com",
+        "status_code": "",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-04-28 08:36:04"
+    },
+    {
+        "url": "faeyfyfyf.com",
+        "status_code": "FAILED",
+        "expiry_status": "Cert not obtained",
+        "expiry_date": "Cert not obtained"
+    },
+    {
+        "url": "github.com",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2026-02-05 23:59:59"
+    },
+    {
+        "url": "apple.com",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-04-16 19:56:22"
+    },
+    {
+        "url": "google.com",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-04-28 08:36:04"
+    },
+    {
+        "url": "linkedin.com",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-04-14 23:59:59"
+    },
+    {
+        "url": "maps.google.com",
+        "status_code": "",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-04-28 08:36:04"
+    },
+    {
+        "url": "youtube.com",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-04-28 08:36:04"
+    },
+    {
+        "url": "youtu.be",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-04-28 08:36:04"
+    },
+    {
+        "url": "microsoft.com",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-08-20 04:21:31"
+    },
+    {
+        "url": "en.wikipedia.org",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-10-17 23:59:59"
+    },
+    {
+        "url": "wikipedia.org",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-10-17 23:59:59"
+    },
+    {
+        "url": "instagram.com",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-03-03 23:59:59"
+    },
+    {
+        "url": "facebook.com",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-03-03 23:59:59"
+    },
+    {
+        "url": "docs.google.com",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-04-28 08:36:04"
+    },
+    {
+        "url": "play.google.com",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-04-28 08:36:04"
+    },
+    {
+        "url": "twitter.com",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-09-29 23:59:59"
+    },
+    {
+        "url": "pinterest.com",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-08-07 23:59:59"
+    },
+    {
+        "url": "wordpress.org",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-05-01 19:43:54"
+    },
+    {
+        "url": "vimeo.com",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-04-21 10:46:39"
+    },
+    {
+        "url": "goo.gl",
+        "status_code": "OK",
+        "expiry_status": "certificate is valid",
+        "expiry_date": "2025-04-28 08:36:04"
+    }
+]

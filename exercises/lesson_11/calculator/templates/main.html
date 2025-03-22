@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>calculator</title>
+</head>
+<body>
+    <div class="content">
+        <h2>Calculator</h2>
+    </div>
+
+    <form id="calculation_form">
+        <label for="num">Input first number</label>
+        <input type="number" name="input_number_1" id="input_number_1" required>
+        <label for="num">Input second number</label>
+        <input type="number" name="input_number_2" id="input_number_2" required>
+        <label for="arithmetic_operation">Choose an operation:</label>
+        <select id="arithmetic_operation">
+
+            <option value="add">add</option>
+            <option value="subtract">subtract</option>
+            <option value="multiply">multiply</option>
+            <option value="divide">divide</option>
+
+        </select>
+
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br><br>
+    <div class="content" id="display_results"></div>
+</body>
+</html>
