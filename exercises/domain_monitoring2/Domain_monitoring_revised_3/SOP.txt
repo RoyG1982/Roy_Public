@@ -1,0 +1,31 @@
+1. Copy files to AWS instance:
+
+scp -i "C:\Users\User\Desktop\AWS_key\RoyG_key.pem" -r "C:\Users\User\Desktop\DevOps\Domain_monitoring7" ubuntu@35.91.21.139:/home/ubuntu/
+
+or Linux:
+
+scp -i "/c/Users/User/Desktop/DevOps/RoyG_key.pem" -r "/c/Users/User/Desktop/DevOps/Domain_monitoring7" ubuntu@35.91.21.139:/home/ubuntu/
+
+
+2. Access AWS instance:
+
+ssh -i "C:\Users\User\Desktop\AWS_key\RoyG_key.pem" ubuntu@35.91.21.139
+
+
+3. Perform updates and installations:
+
+sudo apt update
+
+apt install python3-pip
+
+apt install python3-flask
+
+
+4. Run the app:
+
+cd Domain_monitoring7
+
+python3 app.py
+
+
+5. Open in browser: http://35.91.21.139:8080/

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Liveness Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_2.css') }}">
+</head>
+<body>
+    <h1>Domain Liveness Checker</h1>
+    <p id="logged_in">Logged in as: {{ username }}</p>
+    <button id="logout_button">Logout</button>
+    <button id="show_results_button">Show results</button>
+    <p>Schdule monitoring of URLs: </p>
+    <button onclick="startScheduler()">Start Scheduler</button>
+    
+    <a href="{{ url_for('index') }}">
+    </a>
+
+    <div class="container">
+        <div class="domain-check-section">
+            <input type="text" id="domain" placeholder="Enter domain (e.g., example.com)" required>
+            <button id="check_button">Check</button>
+            <button id="add_button">Add</button> 
+            <button id="upload_button">Upload Domains</button>
+            <input type="file" id="add_txt_file" accept=".txt" style="display: none;">
+        </div>
+        <p id="result"></p>
+
+        <div class="domains-list-section">
+            <h2>Your Domains</h2>
+            <div id="domains-list"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/user_homepage_domains.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/user_homepage_files.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/user_homepage_users.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/user_homepage_schedule.js') }}"></script>
+
+</body>
+</html>
