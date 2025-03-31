@@ -8,7 +8,6 @@
 6. sudo apt install python3-pip
 7. pip3 install flask --break-system-packages
 
-
 sudo ssh -i "/mnt/c/Users/User/Desktop/AWS_key/RoyG_key.pem" ubuntu@54.187.219.49
 git clone https://github.com/RoyG1982/Roy_Public.git
 cd /Roy_Public/exercises/domain_monitoring/Domain_monitoring_final

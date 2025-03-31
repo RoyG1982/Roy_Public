@@ -7,6 +7,7 @@ REPO_URL="https://github.com/RoyG1982/Roy_Public.git"
 APP_DIR="Roy_Public/exercises/domain_monitoring/Domain_monitoring_final"
 
 # SSH into the AWS instance and execute commands
+chmod 400 "$KEY_PATH" || true
 ssh -i "$KEY_PATH" -t $USER@$HOST << "EOF"
     set -e  # Exit on any error
 
