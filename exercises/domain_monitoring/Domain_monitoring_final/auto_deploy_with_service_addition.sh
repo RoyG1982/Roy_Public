@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#This script with the addition of the service, allows the flask app to run even after disconnecting from the machine
+#And it starts on boot
+
 REPO_URL="https://github.com/RoyG1982/Roy_Public.git"
 APP_DIR="Roy_Public/exercises/domain_monitoring/Domain_monitoring_final"
 SERVICE_NAME="flaskapp.service"
